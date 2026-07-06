@@ -90,8 +90,16 @@ On iOS you'll need to add the following entry to your Info.plist file (located u
 <string>This app needs access to location when open.</string>
 ```
 
-If you don't need to receive updates when your app is in the background, then add a compiler flag as follows: in XCode, click on Pods, choose the Target 'geolocator_apple', choose Build Settings, in the search box look for 'Preprocessor Macros' then add the `BYPASS_PERMISSION_LOCATION_ALWAYS=1` flag.
-Setting this flag prevents your app from requiring the `NSLocationAlwaysAndWhenInUseUsageDescription` entry in Info.plist, and avoids questions from Apple when submitting your app. 
+If you don't need to receive updates when your app is in the background, then add a compiler flag as follows:
+
+**CocoaPods (standard)**
+1. In XCode, click on Pods.
+2. Choose the Target 'geolocator_apple'.
+3. Choose Build Settings.
+4. In the search box look for 'Preprocessor Macros'.
+5. Add the `BYPASS_PERMISSION_LOCATION_ALWAYS=1` flag.
+
+Setting this flag prevents your app from requiring the `NSLocationAlwaysAndWhenInUseUsageDescription` entry in Info.plist, and avoids questions from Apple when submitting your app.
 
 You can also have the flag set automatically by adding the following to the `ios/Podfile` of your application:
 ```agsl
@@ -105,6 +113,15 @@ post_install do |installer|
   end
 end
 ```
+
+**Swift Package Manager**
+1. Select your project in the Project Navigator.
+2. Select your app target.
+3. Choose Build Settings.
+4. In the search box look for 'Swift Compiler - Custom Flags' (or 'Apple Clang - Preprocessing' for C/Objective-C).
+5. Add `-DBYPASS_PERMISSION_LOCATION_ALWAYS=1` to 'Other Swift Flags' (or `BYPASS_PERMISSION_LOCATION_ALWAYS=1` to 'Preprocessor Macros').
+
+*Note: When using SPM, you might also need to set the environment variable `BYPASS_PERMISSION_LOCATION_ALWAYS=1` when running `swift build` if you are building from the command line.*
 
 If you do want to receive updates when your App is in the background (or if you don't bypass the permission request as described above) then you'll need to:
 * Add the Background Modes capability to your XCode project (Project > Signing and Capabilities > "+ Capability" button) and select Location Updates. Be careful with this, you will need to explain in detail to Apple why your App needs this when submitting your App to the AppStore. If Apple isn't satisfied with the explanation your App will be rejected.
