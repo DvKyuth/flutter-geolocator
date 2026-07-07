@@ -5,9 +5,9 @@
 #import <geolocator_apple/LocationAccuracyHandler.h>
 #import <geolocator_apple/PermissionHandler.h>
 #else
-#import "Handlers/GeolocationHandler.h"
-#import "Handlers/LocationAccuracyHandler.h"
-#import "Handlers/PermissionHandler.h"
+#import "GeolocationHandler.h"
+#import "LocationAccuracyHandler.h"
+#import "PermissionHandler.h"
 #endif
 
 /// Methods exposed for unit testing.

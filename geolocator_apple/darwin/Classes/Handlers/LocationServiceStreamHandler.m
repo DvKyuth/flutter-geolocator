@@ -7,8 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-#import "Handlers/LocationServiceStreamHandler.h"
-#import "Utils/ServiceStatus.h"
+#import "LocationServiceStreamHandler.h"
+#import "ServiceStatus.h"
 
 @interface LocationServiceStreamHandler()
 @property (strong, nonatomic) CLLocationManager *locationManager;

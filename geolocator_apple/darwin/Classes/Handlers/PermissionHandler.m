@@ -5,9 +5,9 @@
 //  Created by Maurits van Beusekom on 26/06/2020.
 //
 
-#import "Handlers/PermissionHandler.h"
-#import "Constants/ErrorCodes.h"
-#import "Utils/PermissionUtils.h"
+#import "PermissionHandler.h"
+#import "ErrorCodes.h"
+#import "PermissionUtils.h"
 
 @interface PermissionHandler() <CLLocationManagerDelegate>
 

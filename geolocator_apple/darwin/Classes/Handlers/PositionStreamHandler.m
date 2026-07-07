@@ -5,13 +5,13 @@
 //  Created by Maurits van Beusekom on 04/06/2021.
 //
 
-#import "Handlers/PermissionHandler.h"
-#import "Handlers/PositionStreamHandler.h"
-#import "Constants/ErrorCodes.h"
-#import "Utils/ActivityTypeMapper.h"
-#import "Utils/LocationAccuracyMapper.h"
-#import "Utils/LocationDistanceMapper.h"
-#import "Utils/LocationMapper.h"
+#import "PermissionHandler.h"
+#import "PositionStreamHandler.h"
+#import "ErrorCodes.h"
+#import "ActivityTypeMapper.h"
+#import "LocationAccuracyMapper.h"
+#import "LocationDistanceMapper.h"
+#import "LocationMapper.h"
 
 @interface PositionStreamHandler()
 @property (strong, nonatomic, nonnull) GeolocationHandler *geolocationHandler;

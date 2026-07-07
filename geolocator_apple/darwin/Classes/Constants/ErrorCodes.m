@@ -5,7 +5,7 @@
 //  Created by Maurits van Beusekom on 24/06/2020.
 //
 
-#import "Constants/ErrorCodes.h"
+#import "ErrorCodes.h"
 
 NSString * const GeolocatorErrorLocationUpdateFailure = @"LOCATION_UPDATE_FAILURE";
 NSString * const GeolocatorErrorLocationServicesDisabled = @"LOCATION_SERVICES_DISABLED";

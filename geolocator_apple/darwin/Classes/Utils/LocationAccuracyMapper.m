@@ -5,7 +5,7 @@
 //  Created by Maurits van Beusekom on 06/07/2020.
 //
 
-#import "Utils/LocationAccuracyMapper.h"
+#import "LocationAccuracyMapper.h"
 
 @implementation LocationAccuracyMapper
 

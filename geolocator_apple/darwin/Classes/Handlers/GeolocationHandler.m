@@ -5,9 +5,9 @@
 //  Created by Maurits van Beusekom on 20/06/2020.
 //
 
-#import "Handlers/GeolocationHandler.h"
-#import "Handlers/GeolocationHandler_Test.h"
-#import "Constants/ErrorCodes.h"
+#import "GeolocationHandler.h"
+#import "GeolocationHandler_Test.h"
+#import "ErrorCodes.h"
 
 double const kMaxLocationLifeTimeInSeconds = 5.0;
 

@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "Utils/ActivityTypeMapper.h"
+#import "ActivityTypeMapper.h"
 
 @implementation ActivityTypeMapper
 

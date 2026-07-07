@@ -5,7 +5,7 @@
 //  Created by Maurits van Beusekom on 27/08/2021.
 //
 
-#import "Utils/PermissionUtils.h"
+#import "PermissionUtils.h"
 
 @implementation PermissionUtils
 + (BOOL) isStatusGranted:(CLAuthorizationStatus)authorizationStatus {
