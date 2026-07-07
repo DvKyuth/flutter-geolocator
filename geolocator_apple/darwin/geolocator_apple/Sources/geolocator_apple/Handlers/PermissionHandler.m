@@ -72,37 +72,19 @@
   if ([[NSBundle mainBundle] objectForInfoDictionaryKey:@"NSLocationWhenInUseUsageDescription"] != nil) {
     [locationManager requestWhenInUseAuthorization];
   }
-#if !BYPASS_PERMISSION_LOCATION_ALWAYS
-  else if ([self containsLocationAlwaysDescription]) {
-    [locationManager requestAlwaysAuthorization];
-  }
-#endif
 #endif
   else {
     if (self.errorHandler) {
       self.errorHandler(GeolocatorErrorPermissionDefinitionsNotFound,
                         @"Permission definitions not found in the app's Info.plist. Please make sure to "
-                        "add either NSLocationWhenInUseUsageDescription or "
-                        "NSLocationAlwaysUsageDescription to the app's Info.plist file on iOS. If running on macOS please add NSLocationUsageDescription to the app's Info.plist file.");
+                        "add NSLocationWhenInUseUsageDescription to the app's Info.plist file on iOS. "
+                        "If running on macOS please add NSLocationUsageDescription to the app's Info.plist file.");
     }
     
     [self cleanUp];
     return;
   }
 }
-
-#if !BYPASS_PERMISSION_LOCATION_ALWAYS
-- (BOOL) containsLocationAlwaysDescription {
-  BOOL containsAlwaysDescription = NO;
-  if (@available(iOS 11.0, *)) {
-    containsAlwaysDescription = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"NSLocationAlwaysAndWhenInUseUsageDescription"] != nil;
-  }
-  
-  return containsAlwaysDescription
-  ? containsAlwaysDescription
-  : [[NSBundle mainBundle] objectForInfoDictionaryKey:@"NSLocationAlwaysUsageDescription"] != nil;
-}
-#endif
 
 - (void) locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
   if (status == kCLAuthorizationStatusNotDetermined) {
