@@ -5,7 +5,7 @@
 //  Created by Maurits van Beusekom on 20/06/2020.
 //
 
-#import "../include/geolocator_apple/Utils/LocationMapper.h"
+#import "Utils/LocationMapper.h"
 
 @implementation LocationMapper
 + (NSDictionary *) toDictionary:(CLLocation *)location {

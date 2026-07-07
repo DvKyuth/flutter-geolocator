@@ -5,9 +5,9 @@
 //  Created by Maurits van Beusekom on 20/06/2020.
 //
 
-#import "../include/geolocator_apple/Handlers/GeolocationHandler.h"
-#import "../include/geolocator_apple/Handlers/GeolocationHandler_Test.h"
-#import "../include/geolocator_apple/Constants/ErrorCodes.h"
+#import "Handlers/GeolocationHandler.h"
+#import "Handlers/GeolocationHandler_Test.h"
+#import "Constants/ErrorCodes.h"
 
 double const kMaxLocationLifeTimeInSeconds = 5.0;
 

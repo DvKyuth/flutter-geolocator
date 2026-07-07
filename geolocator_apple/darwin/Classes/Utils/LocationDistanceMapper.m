@@ -5,7 +5,7 @@
 //  Created by Maurits van Beusekom on 06/07/2020.
 //
 
-#import "../include/geolocator_apple/Utils/LocationDistanceMapper.h"
+#import "Utils/LocationDistanceMapper.h"
 
 @implementation LocationDistanceMapper
 

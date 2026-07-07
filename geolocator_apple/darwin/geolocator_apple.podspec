@@ -13,9 +13,9 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => '../LICENSE' }
   s.author           = { 'Baseflow' => 'hello@baseflow.com' }
   s.source           = { :http => 'https://github.com/baseflow/flutter-geolocator/tree/master/' }
-  s.source_files = 'geolocator_apple/Sources/geolocator_apple/**/*.{h,m}'
-  s.public_header_files = 'geolocator_apple/Sources/geolocator_apple/include/**/*.h'
-  s.module_map = 'geolocator_apple/Sources/geolocator_apple/include/GeolocatorPlugin.modulemap'
+  s.source_files = 'Classes/**/*.{h,m}'
+  s.public_header_files = 'Classes/**/*.h'
+  s.module_map = 'Classes/GeolocatorPlugin.modulemap'
 
   s.ios.dependency 'Flutter'
   s.osx.dependency 'FlutterMacOS'
@@ -24,5 +24,5 @@ Pod::Spec.new do |s|
 
   # Flutter.framework does not contain a i386 slice. Only x86_64 simulators are supported.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386'}
-  s.resource_bundles = {'geolocator_apple_privacy' => ['geolocator_apple/Sources/geolocator_apple/PrivacyInfo.xcprivacy']}
+  s.resource_bundles = {'geolocator_apple_privacy' => ['Resources/PrivacyInfo.xcprivacy']}
 end

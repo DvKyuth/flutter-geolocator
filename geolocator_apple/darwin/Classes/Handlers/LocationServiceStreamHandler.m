@@ -7,8 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-#import "../include/geolocator_apple/Handlers/LocationServiceStreamHandler.h"
-#import "../include/geolocator_apple/Utils/ServiceStatus.h"
+#import "Handlers/LocationServiceStreamHandler.h"
+#import "Utils/ServiceStatus.h"
 
 @interface LocationServiceStreamHandler()
 @property (strong, nonatomic) CLLocationManager *locationManager;

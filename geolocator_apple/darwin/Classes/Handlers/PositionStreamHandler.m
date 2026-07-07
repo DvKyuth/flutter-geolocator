@@ -5,13 +5,13 @@
 //  Created by Maurits van Beusekom on 04/06/2021.
 //
 
-#import "../include/geolocator_apple/Handlers/PermissionHandler.h"
-#import "../include/geolocator_apple/Handlers/PositionStreamHandler.h"
-#import "../include/geolocator_apple/Constants/ErrorCodes.h"
-#import "../include/geolocator_apple/Utils/ActivityTypeMapper.h"
-#import "../include/geolocator_apple/Utils/LocationAccuracyMapper.h"
-#import "../include/geolocator_apple/Utils/LocationDistanceMapper.h"
-#import "../include/geolocator_apple/Utils/LocationMapper.h"
+#import "Handlers/PermissionHandler.h"
+#import "Handlers/PositionStreamHandler.h"
+#import "Constants/ErrorCodes.h"
+#import "Utils/ActivityTypeMapper.h"
+#import "Utils/LocationAccuracyMapper.h"
+#import "Utils/LocationDistanceMapper.h"
+#import "Utils/LocationMapper.h"
 
 @interface PositionStreamHandler()
 @property (strong, nonatomic, nonnull) GeolocationHandler *geolocationHandler;

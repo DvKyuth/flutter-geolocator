@@ -5,7 +5,7 @@
 //  Created by Maurits van Beusekom on 15/06/2020.
 //
 
-#import "../include/geolocator_apple/Utils/AuthorizationStatusMapper.h"
+#import "Utils/AuthorizationStatusMapper.h"
 
 @implementation AuthorizationStatusMapper
 + (NSNumber *) toDartIndex: (CLAuthorizationStatus) authorizationStatus {

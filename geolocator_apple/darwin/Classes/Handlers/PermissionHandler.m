@@ -5,9 +5,9 @@
 //  Created by Maurits van Beusekom on 26/06/2020.
 //
 
-#import "../include/geolocator_apple/Handlers/PermissionHandler.h"
-#import "../include/geolocator_apple/Constants/ErrorCodes.h"
-#import "../include/geolocator_apple/Utils/PermissionUtils.h"
+#import "Handlers/PermissionHandler.h"
+#import "Constants/ErrorCodes.h"
+#import "Utils/PermissionUtils.h"
 
 @interface PermissionHandler() <CLLocationManagerDelegate>
 

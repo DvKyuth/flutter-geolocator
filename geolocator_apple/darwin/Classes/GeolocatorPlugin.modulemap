@@ -1,0 +1,28 @@
+framework module geolocator_apple {
+  umbrella header "geolocator-umbrella.h"
+
+  export *
+  module * { export * }
+  
+  explicit module Private {
+    header "Constants/ErrorCodes.h"
+    header "Handlers/GeolocationHandler.h"
+    header "Handlers/LocationAccuracyHandler.h"
+    header "Handlers/LocationServiceStreamHandler.h"
+    header "Handlers/PermissionHandler.h"
+    header "Handlers/PositionStreamHandler.h"
+    header "Utils/ActivityTypeMapper.h"
+    header "Utils/AuthorizationStatusMapper.h"
+    header "Utils/LocationAccuracyMapper.h"
+    header "Utils/LocationDistanceMapper.h"
+    header "Utils/LocationMapper.h"
+    header "Utils/PermissionUtils.h"
+    header "Utils/ServiceStatus.h"
+  }
+
+
+  explicit module Test {
+    header "Handlers/GeolocationHandler_Test.h"
+    header "GeolocatorPlugin_Test.h"
+  }
+}

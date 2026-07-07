@@ -7,8 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-#import "../include/geolocator_apple/Handlers/LocationAccuracyHandler.h"
-#import "../include/geolocator_apple/Constants/ErrorCodes.h"
+#import "Handlers/LocationAccuracyHandler.h"
+#import "Constants/ErrorCodes.h"
 
 @interface LocationAccuracyHandler()
 @property (strong, nonatomic) CLLocationManager *locationManager;

@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "../include/geolocator_apple/Utils/ActivityTypeMapper.h"
+#import "Utils/ActivityTypeMapper.h"
 
 @implementation ActivityTypeMapper
 
