@@ -1,14 +1,6 @@
-// This header is available in the Test module. Import via "@import geolocator_apple.Test;"
-
-#if __has_include(<geolocator_apple/GeolocationHandler.h>)
-#import <geolocator_apple/GeolocationHandler.h>
-#import <geolocator_apple/LocationAccuracyHandler.h>
-#import <geolocator_apple/PermissionHandler.h>
-#else
 #import "GeolocationHandler.h"
 #import "LocationAccuracyHandler.h"
 #import "PermissionHandler.h"
-#endif
 
 /// Methods exposed for unit testing.
 @interface GeolocatorPlugin(Test)
